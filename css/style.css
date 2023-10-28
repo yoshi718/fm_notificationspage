@@ -47,9 +47,18 @@ a:hover {
 
   --fs-xxl: 1.5rem;
   --fs-xl: 1.25rem;
-  --fs-lrg: 1rem;
-  --fs-med: 0.75rem;
+  --fs-lrg: 0.8rem;
+  --fs-med: 0.7rem;
   --fs-sml: 0.5rem;
+
+  --line-height-main: 1.05rem;
+}
+
+@media (min-width: 550px) {
+  :root {
+    --fs-lrg: 1rem;
+    --line-height-main: 1.25rem;
+  }
 }
 
 /* MAIN */
@@ -104,7 +113,7 @@ body {
 }
 
 .notification-main {
-  line-height: 1.15rem;
+  line-height: var(--line-height-main);
   margin-bottom: 2.5rem;
   flex-grow: 1;
 }
