@@ -16,7 +16,7 @@ a:hover {
 }
 
 /* FONT DEFINTIONS */
-@font-face {
+/* @font-face {
   font-family: PlusJakartaSans-Medium;
   src: url("assets/fonts/PlusJakartaSans-Medium.ttf");
 }
@@ -24,7 +24,7 @@ a:hover {
   font-family: PlusJakartaSans-Bold;
   src: url("assets/fonts/PlusJakartaSans-ExtraBold.ttf");
   font-weight: bold;
-}
+} */
 
 /* VARIABLES */
 :root {
@@ -43,12 +43,11 @@ a:hover {
   --clr-secondary-very-dark: hsl(224, 21%, 14%);
 
   /* Fonts */
-  --ff-primary: PlusJakartaSans-Medium;
-  --ff-primary-bold: PlusJakartaSans-Bold;
+  --ff-primary: "Plus Jakarta Sans", sans-serif;
 
   --fs-xxl: 1.5rem;
   --fs-xl: 1.25rem;
-  --fs-lrg: 0.9rem;
+  --fs-lrg: 1rem;
   --fs-med: 0.75rem;
   --fs-sml: 0.5rem;
 }
@@ -70,7 +69,7 @@ body {
 
 .notifications-header {
   font-size: var(--fs-xl);
-  font-weight: bold;
+  font-weight: 700;
   color: var(--clr-primary);
 }
 
@@ -126,7 +125,7 @@ body {
 }
 
 .notification-main a {
-  font-weight: bold;
+  font-weight: 700;
   color: var(--clr-primary);
 }
 

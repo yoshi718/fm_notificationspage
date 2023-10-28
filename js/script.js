@@ -28,17 +28,17 @@ markAll.addEventListener("click", function () {
 const markup = function (n) {
   if (!n.name) return ``;
 
-  const name = `<a href='#' class='name'>${n.name}</a>`;
+  const name = `<a href='#'>${n.name}</a>`;
 
   const image = n.posterImage
     ? `<img src='${n.posterImage}' alt='poster image' />`
     : ``;
-  const action = n.action ? `<span class='action'>${n.action}</span>` : ``;
-  const group = n.group ? `<a href="#" class='group'>${n.group}</a>` : ``;
+  const action = n.action ? `<span>${n.action}</span>` : ``;
+  const group = n.group ? `<a href="#">${n.group}</a>` : ``;
   const unread = n.unread ? `show` : ``;
   const message = n.message ? `<p>${n.message}</p>` : ``;
   const picture = n.picture
-    ? `<div class="notification-picture">
+    ? `<div>
           <a href="#">
             <img src='${n.picture}' alt='' />
           </a>
