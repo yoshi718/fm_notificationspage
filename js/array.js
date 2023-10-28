@@ -2,7 +2,7 @@ export function createArray() {
   const notificationArray = [
     {
       name: "Mark webber",
-      posterImage: "/assets/images/avatar-mark-webber.webp",
+      posterImage: "assets/images/avatar-mark-webber.webp",
       action: "reacted to your recent post",
       group: "My first tournament today!",
       unread: true,
@@ -12,7 +12,7 @@ export function createArray() {
     },
     {
       name: "Angela Gray",
-      posterImage: "/assets/images/avatar-angela-gray.webp",
+      posterImage: "assets/images/avatar-angela-gray.webp",
       action: "followed you",
       group: "",
       unread: true,
@@ -22,7 +22,7 @@ export function createArray() {
     },
     {
       name: "Jacob Thompson",
-      posterImage: "/assets/images/avatar-jacob-thompson.webp",
+      posterImage: "assets/images/avatar-jacob-thompson.webp",
       action: "Has joined your group",
       group: "Chess Club",
       unread: true,
@@ -32,7 +32,7 @@ export function createArray() {
     },
     {
       name: "Rizky Hasanuddin",
-      posterImage: "/assets/images/avatar-rizky-hasanuddin.webp",
+      posterImage: "assets/images/avatar-rizky-hasanuddin.webp",
       action: "sent you a private message",
       group: "",
       unread: false,
@@ -43,13 +43,13 @@ export function createArray() {
     },
     {
       name: "Kimberly Smith",
-      posterImage: "/assets/images/avatar-kimberly-smith.webp",
+      posterImage: "assets/images/avatar-kimberly-smith.webp",
       action: "commented on your picture",
       group: "Pic Club",
       unread: false,
       time: "1 week ago",
       message: "",
-      picture: "/assets/images/image-chess.webp",
+      picture: "assets/images/image-chess.webp",
     },
     {
       name: "Nathan Peterson",
