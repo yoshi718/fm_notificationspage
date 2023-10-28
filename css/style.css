@@ -18,11 +18,11 @@ a:hover {
 /* FONT DEFINTIONS */
 @font-face {
   font-family: PlusJakartaSans-Medium;
-  src: url("/assets/fonts/PlusJakartaSans-Medium.ttf");
+  src: url("assets/fonts/PlusJakartaSans-Medium.ttf");
 }
 @font-face {
   font-family: PlusJakartaSans-Bold;
-  src: url("/assets/fonts/PlusJakartaSans-ExtraBold.ttf");
+  src: url("assets/fonts/PlusJakartaSans-ExtraBold.ttf");
   font-weight: bold;
 }
 
