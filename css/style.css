@@ -1,0 +1,161 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* FONT DEFINTIONS */
+/* @font-face {
+  font-family: PlusJakartaSans-Medium;
+  src: url("assets/fonts/PlusJakartaSans-Medium.ttf");
+}
+@font-face {
+  font-family: PlusJakartaSans-Bold;
+  src: url("assets/fonts/PlusJakartaSans-ExtraBold.ttf");
+  font-weight: bold;
+} */
+
+/* VARIABLES */
+:root {
+  /* Colors Primary */
+  --clr-primary: hsl(234, 10%, 19%);
+  --clr-primary-red: hsl(1, 90%, 64%);
+  --clr-primary-blue: hsl(219, 85%, 26%);
+
+  /* Colors Neutral */
+  --clr-secondary-white: hsl(0, 0%, 100%);
+  --clr-secondary-very-light: hsl(210, 60%, 98%);
+  --clr-secondary-light1: hsl(211, 68%, 94%);
+  --clr-secondary-light2: hsl(205, 33%, 90%);
+  --clr-secondary-mid: hsl(219, 14%, 63%);
+  --clr-secondary-dark: hsl(219, 12%, 42%);
+  --clr-secondary-very-dark: hsl(224, 21%, 14%);
+
+  /* Fonts */
+  --ff-primary: "Plus Jakarta Sans", sans-serif;
+
+  --fs-xxl: 1.5rem;
+  --fs-xl: 1.25rem;
+  --fs-lrg: 0.8rem;
+  --fs-med: 0.7rem;
+  --fs-sml: 0.5rem;
+
+  --line-height-main: 1.05rem;
+}
+
+@media (min-width: 550px) {
+  :root {
+    --fs-lrg: 1rem;
+    --line-height-main: 1.25rem;
+  }
+}
+
+/* MAIN */
+
+body {
+  font-family: var(--ff-primary);
+  margin: 4rem auto;
+  width: clamp(20rem, 100%, 50rem);
+}
+
+.heading-bar {
+  margin: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notifications-header {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+.notices {
+  padding: 0.25rem 0.5rem;
+  color: var(--clr-secondary-white);
+  background-color: var(--clr-primary-blue);
+  border-radius: 0.5rem;
+}
+
+.mark-all {
+  font-size: var(--fs-lrg);
+  color: var(--clr-secondary-mid);
+}
+
+.mark-all:hover {
+  cursor: pointer;
+  color: var(--clr-primary-blue);
+}
+
+/* NOTIFICATIONS */
+.notification {
+  font-size: var(--fs-lrg);
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.notification img {
+  width: 2.5rem;
+}
+
+.notification-main {
+  line-height: var(--line-height-main);
+  margin-bottom: 2.5rem;
+  flex-grow: 1;
+}
+
+.notification-main * {
+  margin-right: 0.25rem;
+}
+
+.notification-main p {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--clr-secondary-light2);
+}
+
+.notification-main p:hover {
+  background-color: var(--clr-secondary-light2);
+  cursor: pointer;
+}
+
+.notification-main a {
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+.notification-main a:hover {
+  color: var(--clr-primary-blue);
+}
+
+.unread {
+  display: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: red;
+  border-radius: 0.75rem;
+}
+
+.show {
+  display: inline-block;
+}
+
+.time {
+  color: var(--clr-secondary-mid);
+  margin-top: 0.2rem;
+  display: block;
+}
